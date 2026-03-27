@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Div based layout</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+}
+
+header{
+  background-color: rgb(0, 234, 255);
+  height:100px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+nav{
+  background:rgb(38, 0, 255);
+}
+
+nav a{
+  color:rgb(255, 255, 255);
+  text-decoration:none;
+}
+nav a:active {
+  background-color: aqua;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a{
+  color:rgb(255, 255, 255);
+  text-decoration:none;
+}
+
+nav li{
+  padding:15px;
+}
+
+
+main{
+  display:flex;
+}
+
+#aside{
+  width:20%;
+  background:hwb(0 100% 0%);
+  padding:10px;
+}
+
+#section{
+  width:40%;
+  padding:10px;
+}
+
+#article{
+  width:40%;
+  padding:10px;
+}
+
+footer{
+  background-color:rgb(247, 2, 255);
+  height:100px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+@media screen and (max-width:700px){
+  main{
+    flex-direction:column;
+  }
+  #aside,
+  #section,
+  #article{
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Header</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="#Home">Home</a></li>
+<li><a href="#News">News</a></li>
+<li><a href="#Contact">Contact</a></li>
+<li><a href="#About">About</a></li>
+</ul>
+</nav>
+
+<main>
+
+<div id="aside">
+<h1>Aside</h1>
+<h2>The aside HTML element represents a section of a document that is tangentially related to the main content. It is often used for sidebars, call-out boxes, or any content that is indirectly related to the main content. This element is widely supported across modern browsers.</h2>
+</div>
+
+<div id="section">
+<h1>Section</h1>
+<h2>
+The section element in HTML is used to define a standalone, thematic grouping of content within a document. It is a semantic element introduced in HTML5 and is part of the sectioning content category, meaning it contributes to the document outline.
+
+
+</h2>
+</div>
+
+<div id="article">
+<h1>Article</h1>
+<h2>
+The HTML <article> tag is used to define a self-contained, independent piece of content within a document. This tag is particularly useful for content that can be independently distributed, shared, or reused, such as blog posts, news articles, forum posts, or user comments.
+</h2>
+</div>
+
+</main>
+
+<footer>
+<h1>Footer</h1>
+</footer>
+
+<img src="task5.jpg.png" width="100%">
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfonso, Justine C. - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+
+        body {
+            line-height: 1;
+            color: #000000;
+    
+        }
+
+        nav {
+            background: #0088ff;
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            justify-content: flex-end;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color:#000000;
+        }
+
+        .homee {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.766)), url('cod.jpg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 250, 250);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 5%;
+        }
+
+        .homee h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .homee p {
+            font-size: 1.5rem;
+            color:#ecf0f1;
+            margin-bottom: 2rem;
+        }
+
+        .boton {
+            padding: 0.8rem 2rem;
+            background: #000000;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1rem;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+
+        .boton:hover {
+            background: #2980b9;
+        }
+
+        .boton-secondary {
+            background: #0088ff;
+        }
+
+        .boton-secondary:hover {
+            background: #34495e;
+        }
+
+        section {
+            padding: 6rem 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #0088ff;
+            margin-bottom: 3rem;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(44, 43, 43, 0.1);
+        }
+
+        .skills-grid {
+            display: grid;
+          
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .skill-card {
+            padding: 2rem;
+            background: rgb(255, 255, 255);
+            border-radius: 8px;
+            border-color: #000000;
+        }
+
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: rgb(255, 255, 255);
+            border-radius: 8px;
+            box-shadow: 0 100px 100px rgba(0, 0, 0, 0.1);
+           overflow: auto;
+            outline: #000000;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            box-shadow: 0 100px 100px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .project-details {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .project-details h3 {
+            color:#0088ff;
+            margin-bottom: 1rem;
+        }
+
+        .project-details p {
+            margin-bottom: 1.5rem;
+        }
+
+        footer {
+            background: #0088ff;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 2rem 5%;
+        }
+
+        .social-links {
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 0.8rem;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #000000;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <h1> MY PORTFOLIO&#128187;</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="homee">
+        <h1>Justhings</h1>
+        <p>good | improvements | are | better</p>
+        <a href="#projects" class="boton">View My Work</a>
+    </section>
+
+    <section id="about" style="background-color:#a3e3ff;">
+        <h1 class="section-title">About Me &#128190;</h1>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="grad.jpg.jpg">
+            </div>
+            <div class="about-text">
+                <h3>Hi, I'm justine from culatingan conception tarlac!</h3>
+                <p>"Sabi nila, baka hindi pa ako gaano marunong totoo naman, hindi pa ako expert sa lahat ng bagay pagdating sa web development. Pero hindi naman ibig sabihin nun ay hindi ako magsisikap para matuto!"</p>
+                <p>"Kaya pag hindi ako busy sa coding, sinusundan ko mga local tech communities dito sa Philippines para makakuha ng tips at matuto pa mula sa iba. Gusto ko rin gumawa ng mga simpleng projects para malutas yung mga maliit na problema sa lugar namin. Basta't patuloy akong natututo, okay na yun – dahil para sa'kin, ang importante ay hindi sumusuko at lagi akong handang matuto ng bago!"</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" style="background-color:#cff1ff;">
+        <h2 class="section-title">My Skills &#128189;</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill-card">
+                <h3>Java</h3>
+            </div>
+            <div class="skill-card">
+                <h3>Phython</h3>
+            </div>
+    
+        
+    </section>
+
+    <section id="projects" style="background-color:#a3e3ff;">
+        <h2 class="section-title">My Projects / Tasks &#128203;</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-details">
+                    <h3>Task 1:Resume</h3>
+                    <p>This is my resume without CSS</p>
+                    <a href="C:\Users\Justine\OneDrive\Desktop\portfolio\task1.html" class="boton boton-secondary">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-details">
+                    <h3>Task 2:UNORDERED and ORDERED LIST</h3>
+                    <p>This is my task 2
+                    </p>
+                    <a href="C:\Users\Justine\OneDrive\Desktop\portfolio\task2.html" class="boton boton-secondary">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-details">
+                    <h3>Task 3:How can i help you</h3>
+                    <p>this have a text bar and some padding and ect..</p>
+                    <a href="C:\Users\Justine\OneDrive\Desktop\portfolio\task3.html" class="boton boton-secondary">GitHub</a>
+                </div>
+            </div>
+        
+            <div class="project-card">
+                <div class="project-details">
+                    <h3>Task 4:Resume with CSS</h3>
+                    <p> Include/added the CSS to the resume i made.</p>
+                    <a href="C:\Users\Justine\OneDrive\Desktop\portfolio\task4.html" class="boton boton-secondary">GitHub</a>
+                </div>
+            </div>
+        
+             <div class="project-card">
+                <div class="project-details">
+                    <h3>Task 5:Resume with CSS</h3>
+                    <p> Include/added the CSS to the resume i made.</p>
+                    <a href="C:\Users\Justine\OneDrive\Desktop\portfolio\task5.html" class="boton boton-secondary">GitHub</a>
+                </div>
+            </div>
+
+             <div class="project-card">
+                <div class="project-details">
+                    <h3>Task 6:Responsive Layout using Flex</h3>
+                    <p> A responsive layout using Flexbox in HTML/CSS means designing a webpage that automatically adjusts its structure and alignment depending on the screen size (desktop, tablet, mobile). Flexbox makes it easier to control how elements grow, shrink, and wrap inside a container.</p>
+                    <a href="" class="boton boton-secondary">GitHub</a>
+                </div>
+            </div>
+        
+    </section>
+    
+    <footer>
+        <h1>&#128205;THANK YOU FOR VISITING MY PORTFOLIO&#128205;</h1>
+    </footer>
+</body>
+</html>
