@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple University Map</title>
+    <style>
+        /* Container to hold map and clickable spots */
+        .campus-map {
+            position: relative;
+            max-width: 600px; /* Fits most screens */
+            margin: 20px auto;
+        }
+
+        /* Responsive map image */
+        .campus-img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #333;
+        }
+
+        /* Clickable area base style */
+        .spot {
+            position: absolute;
+            cursor: pointer;
+            background: rgba(255, 193, 7, 0.3); /* Light yellow highlight */
+            border-radius: 4px;
+        }
+
+        /* Show label on hover */
+        .spot:hover .spot-label {
+            display: block;
+        }
+
+        /* Label style */
+        .spot-label {
+            display: none;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+
+        /* Define positions for each spot (adjust as needed) */
+        .main-building {
+            top: 20%;
+            left: 40%;
+            width: 20%;
+            height: 25%;
+        }
+
+        .library {
+            top: 55%;
+            left: 25%;
+            width: 15%;
+            height: 20%;
+        }
+
+        .gym {
+            top: 50%;
+            left: 65%;
+            width: 18%;
+            height: 22%;
+        }
+    </style>
+</head>
+<body>
+    <div class="campus-map">
+        <!-- Placeholder campus map (replace with your actual map image) -->
+        <img src="map.png" alt="University Campus Map" class="campus-img">
+
+        <!-- Main Building Spot -->
+        <a href="#main-building" class="spot main-building">
+            <span class="spot-label">Main Building</span>
+        </a>
+
+        <!-- Library Spot -->
+        <a href="#library" class="spot library">
+            <span class="spot-label">Library</span>
+        </a>
+
+        <!-- Gym Spot -->
+        <a href="#gym" class="spot gym">
+            <span class="spot-label">Gymnasium</span>
+        </a>
+    </div>
+</body>
+</html>
