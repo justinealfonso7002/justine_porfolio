@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>grid demo2 using grid area</title>
+<style>
+  #g-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 100px 20px;
+    border: 1px solid rgb(0, 255, 4);
+    border-radius: 20px;
+    gap: 5px; 
+    color: rgb(0, 0, 0)
+    
+  }
+  #g-container>.s1{
+    background-color:rgb(4, 0, 255);
+  }
+ 
+  #g-item1{
+    grid-row: span 2;
+  }
+  #g-item2{
+   grid-column: span 1;
+  }
+  #g-item3{
+    grid-column: span 1;
+  }
+    #g-item4{
+    grid-column: span 2;
+    }
+      #g-item5{
+    grid-column: span 3;
+      }
+</style>
+</head>
+
+<body>
+  <div>
+   <div id="g-container">
+  <div id="g-item1" class="s1">1</div>
+  <div id="g-item2" class="s1">2</div>
+  <div id="g-item3" class="s1">3</div>
+  <div id="g-item4" class="s1">4</div>
+  <div id="g-item5" class="s1">5</div>
+     <!--<div id="g-item6" class="s1">G6</div>
+  <div id="g-item7" class="s1">G7</div>
+  <div id="g-item8" class="s1">G8</div>
+  <div id="g-item9" class="s1">9</div>
+  <div id="g-item10" class="s1">G10</div>
+  <div id="g-item11" class="s1">G11</div>
+  <div id="g-item12" class="s1">G12</div>-->
+    </div>
+   
+  </div>
+ 
+ 
+ 
+</body>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>grid</title>
+<style>
+.container {
+    display: grid;
+    grid-template-areas: "g1 g2 g3" "g4 g4 g3""g5 g5 g5";
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px;
+    padding: 10px;
+    background: #fff;
+  }
+.box {
+    background: rgb(47, 0, 255);
+    border: 5px solid rgb(0, 255, 17);
+  }
+  
+  .g1 {
+      grid-area: g1; 
+  }
+  .g2 { 
+      grid-area: g2;
+  }
+  .g3 {
+      grid-area: g3; 
+  }
+  .g4 { 
+      grid-area: g4;
+  }
+  .g5 { 
+      grid-area: g5;
+  }
+</style>
+    
+</head>
+<body>
+
+<div class="container">
+  <div class="box g1">G1</div>
+  <div class="box g2">G2</div>
+  <div class="box g3">G3</div>
+  <div class="box g4">G4</div>
+  <div class="box g5">G5</div>
+</div>
+
+</body>
+</html>
