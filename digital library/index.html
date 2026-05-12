@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSAU Digital Library</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+       body { 
+            
+             background: url('lib.jpg') ; 
+             background-size: cover; 
+             min-height: 100vh;
+         }
+         
+         .overlay {
+             background-color: rgba(255, 255, 255, 0.85); 
+             min-height: 100vh;
+         }
+
+        header {
+            background: #22c55e; 
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+        }
+    
+        .header-top {
+            display: flex;
+            align-items:center;
+            gap: 10px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .welcome {
+            background: #facc15; 
+            color: black;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 20px;
+            position: relative;
+        }
+        .search-input {
+            width: 100%;
+            padding: 15px;
+            border-radius: 30px;
+            border: 2px solid #22c55e;
+            font-size: 16px;
+        }
+        .search-btn {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #22c55e;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .container {
+             padding: 20px;
+             }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 5px;
+            margin-bottom: 30px;
+            
+        }
+
+        .box-link {
+            text-decoration: none;
+            display: block;
+        }
+
+        .box {
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            border: 3px solid #22c55e;
+            font-size: 50px;
+        }
+
+        .box h3 { 
+            font-size: 22px;
+             color: black; 
+             margin-top:10px;
+        }
+
+        .item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 8px solid #22c55e;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border: 2px solid #ddd;
+        }
+
+        .item-icon { 
+            font-size: 40px;
+         }
+
+        .item-text {
+             flex: 1; 
+            }
+
+        .view-btn {
+            background: #22c55e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background: #22c55e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <span>📖</span>
+        <span>PSAU Digital Library</span>
+    </div>
+</header>
+
+<div class="welcome">
+    <h1>Welcome!</h1>
+    <p>Discover knowledge anytime, anywhere.</p>
+</div>
+
+<div class="search-container">
+    <input type="text" class="search-input" placeholder="Search...">
+    <a href="" class="search-btn">🔍 Search</a>
+</div>
+
+ <h2 style="color:#000000; padding-bottom:5px;">Collections</h2>
+
+        <div class="item">
+            <span class="item-icon">📚</span>
+            <div class="item-text">
+                <h3>E-Books</h3>
+                <p style="color:#666;">Digital books collection.</p>
+            </div>
+            <a href="ebooks.html" class="view-btn">view</a>
+        </div>
+    </a>
+
+        <div class="item">
+            <span class="item-icon">📰</span>
+            <div class="item-text">
+                <h3>Journals</h3>
+                <p style="color:#666;">Research papers and articles.</p>
+            </div>
+            <a href="journals.html" class="view-btn">view</a>
+        </div>
+    </a>
+
+    
+        <div class="item">
+            <span class="item-icon">🗄️</span>
+            <div class="item-text">
+                <h3>Databases</h3>
+                <p style="color:#666;">Online references.</p>
+            </div>
+           <a href="database.html" class="view-btn">view</a>
+        </div>
+    </a>
+
+<h2 style="color:#22c55e;  padding-bottom:5px; margin-top:30px;">Services</h2>
+    <div class="grid-3">
+        <a href="reference.html" class="box-link">
+            <div class="box" style="background:#fefefd; border-color:#facc15;">
+                <span>🎧</span>
+                <h3>Reference Assistance</h3>
+            </div>
+        </a>
+        <a href="usertrain.html" class="box-link">
+            <div class="box" style="background:#fffefc; border-color:#facc15;">
+                <span>👨‍🏫</span>
+                <h3>User Training</h3>
+            </div>
+        </a>
+        <a href="museum.html" class="box-link">
+            <div class="box" style="background:#ffffff; border-color:#facc15;">
+                <span>🏛️</span>
+                <h3>Museum</h3>
+            </div>
+        </a>
+
+
+
+<div class="container">
+    <div class="grid-3">
+        <a href="aboutus.html" class="box-link">
+            <div class="box">
+                <h3>About Us</h3>
+            </div>
+        </a>
+        <a href="goal.html" class="box-link">
+            <div class="box">
+                <h3>Goal</h3>
+            </div>
+        </a>
+
+        <a href="contact.html" class="box-link">
+            <div class="box">
+                <h3>Contact</h3>
+            </div>
+        </a>
+    </div>
+    
+    </div>
+</div>
+
+<footer>
+    <p>2026,PSAU DIGITAL LIBRARY</p>
+</footer>
+
+</body>
+</html>

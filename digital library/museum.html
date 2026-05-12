@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Museum</title>
+    <style>
+        * {
+            margin:0;
+             padding:0; 
+             box-sizing:border-box; 
+             font-family:Arial, sans-serif;
+            }
+
+        body {
+            background:white;
+        }
+
+        header {
+            background:#22c55e; 
+            color:white;
+             padding:15px;
+              display:flex; 
+              justify-content:space-between; 
+              align-items:center;
+            }
+
+        .back-btn {
+            background:#facc15; 
+            color:black; 
+            padding:8px 15px;
+            border-radius:8px;
+             text-decoration:none; 
+             font-weight:bold;
+            }
+
+
+        .container {
+            max-width:900px; 
+            margin:30px auto;
+             padding:0 20px;
+            }
+
+        h1 {
+            text-align:center;
+             margin-bottom:20px
+            }
+
+        .content-box {
+            border:3px solid #22c55e;
+             padding:30px;
+              border-radius:15px
+            }
+
+        .museum-img {
+            width: 100%;
+            height: 200px;
+            border: 3px solid #facc15;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8fafc;
+        }
+
+        .museum-grid {
+            display:grid;
+             grid-template-columns:1fr 1fr; 
+             gap:15px; margin-top:20px;
+            }
+
+        .museum-item {
+            background:#fffffe;
+            padding:20px;
+            border-radius:10px;
+            text-align:center; 
+            font-size:40px;
+            border:2px solid #facc15;
+            }
+
+        footer {
+            background:#22c55e; 
+            color:white; 
+            text-align:center;
+             padding:20px;
+              margin-top:50px;
+            }
+
+    </style>
+</head>
+<body>
+<header>
+    <h3>🏛️ Museum</h3>
+    <a href="index.html" class="back-btn">⬅️ Back</a>
+</header>
+<div class="container">
+    <div class="content-box">
+        <h1>Welcome to PSAU Museum</h1>
+
+        <!-- some museume picture -->
+        <div class="museum-img">
+            <img src="museum.jpg" alt="Museum" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        
+         <div class="museum-img">
+            <img src="museum.jpg" alt="Museum" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+
+         <div class="museum-img">
+            <img src="museum.jpg" alt="Museum" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+
+         <div class="museum-img">
+            <img src="museum.jpg" alt="Museum" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+
+         <div class="museum-img">
+            <img src="museum.jpg" alt="Museum" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        
+        
+        
+        <p style="text-align:justify; margin-bottom:20px;">The Museum preserves the history and heritage of PSAU. It showcases valuable items, historical documents, and memorabilia.</p>
+        
+        <div class="museum-grid">
+            <div class="museum-item">
+                <span>📜</span>
+                <h4>Historical Archives</h4>
+                <p style="font-size:14px;">Old records and photos.</p>
+            </div>
+            <div class="museum-item">
+                <span>🏆</span>
+                <h4>Awards & Trophies</h4>
+                <p style="font-size:14px;">Recognitions received.</p>
+            </div>
+            <div class="museum-item">
+                <span>🔧</span>
+                <h4>Tools & Equipment</h4>
+                <p style="font-size:14px;">Traditional and modern items.</p>
+            </div>
+            <div class="museum-item">
+                <span>👑</span>
+                <h4>Leadership Gallery</h4>
+                <p style="font-size:14px;">History of administrators.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>2026,PSAU DIGITAL LIBRARY</footer>
+</body>
+</html>

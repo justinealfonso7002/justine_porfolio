@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Journals</title>
+    <style>
+        * {
+            margin:0; 
+            padding:0; 
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+        body {
+            background:white;
+        }
+
+        header 
+        {background:#22c55e; 
+            color:white; 
+            padding:15px;
+             display:flex; 
+             justify-content:space-between; 
+             align-items:center;
+            }
+        .back-btn {
+            background:#facc15;
+             color:black; padding:8px 15px;
+              border-radius:8px; text-decoration:none;
+               font-weight:bold;
+            }
+        .container {
+            max-width:900px; 
+            margin:30px auto;
+             padding:0 20px;
+            }
+        h1 {
+            text-align:center;
+             margin-bottom:20px;
+            }
+        .content-box 
+        {
+            border:3px solid #22c55e; 
+            padding:30px; 
+            border-radius:15px;
+        }
+
+        .journal-item {
+            display:flex; 
+            align-items:center;
+             gap:15px; 
+             padding:15px;
+              background:#fef3c7;
+              margin:10px 0; 
+              border-radius:10px; 
+              font-size:30px;
+            
+            }
+
+        .journal-text {
+            flex:1;
+        }
+        .view-btn {
+            background:#22c55e;
+             color:white; 
+             padding:8px 15px; 
+             text-decoration:none; 
+             border-radius:8px; 
+             font-weight:bold;
+            }
+
+        footer {
+            background:#22c55e;
+             color:white;
+              text-align:center;
+               padding:20px;
+                margin-top:50px;
+            }
+
+    </style>
+</head>
+<body>
+<header>
+    <h3>📰 Journals</h3>
+    <a href="index.html" class="back-btn">⬅️ Back</a>
+</header>
+<div class="container">
+    <div class="content-box">
+        <h1>Research Articles</h1>
+        
+        <div class="journal-item">
+            <span>📄</span>
+            <div class="journal-text">
+                <h4>Agriculture Review</h4>
+                <p style="font-size:14px; color:#666;">Studies about farming and soil.</p>
+            </div>
+            <a href="agri.html" class="view-btn">View</a>
+        </div>
+
+        <div class="journal-item">
+            <span>🔬</span>
+            <div class="journal-text">
+                <h4>Science & Technology</h4>
+                <p style="font-size:14px; color:#666;">Latest innovations and discoveries.</p>
+            </div>
+            <a href="#" class="view-btn">View</a>
+        </div>
+
+        <div class="journal-item">
+            <span>📚</span>
+            <div class="journal-text">
+                <h4>Education Research</h4>
+                <p style="font-size:14px; color:#666;">Papers about learning and teaching.</p>
+            </div>
+            <a href="#" class="view-btn">View</a>
+        </div>
+
+    </div>
+</div>
+<footer>2026,PSAU DIGITAL LIBRARY</footer>
+</body>
+</html>
